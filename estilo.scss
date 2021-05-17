@@ -1,0 +1,418 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+//variables
+$amarillo: yellow;
+
+// animaciones 
+
+.zoom {
+    transition-duration: .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+}
+
+// mixins 
+
+@mixin tituloBanner {   // Titulo de portada
+        max-width: 1000px;
+        margin: 0px;
+        padding: 0xp;
+        border: 0px;
+        font-family: 'Cinzel', serif;
+        font-size: 60px;
+        color: white;
+        position: relative;
+        top: 15%;
+        left: 10%;
+        transform: translateY(350%);
+    }
+
+@mixin subtituloBanner { //Subtitulo de portada 
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%);
+}
+
+@mixin caja { //  caja de texto/elementos
+    width: 62rem;
+    height: 25rem;
+    transform: translateX(45%);
+    align-items: center;
+    text-align: center;
+
+}
+
+//nav bar
+.violeta {
+    background-image: linear-gradient(to right, rgba(165, 69, 69, 0.753) , rgb(100, 1, 1));
+}
+.centrar {
+    text-align: center;
+}
+
+.centrado {
+    justify-content: space-around;
+}
+
+.margenBot {
+    margin-bottom: 20px;
+}
+
+.m0p0 {
+    margin: 0px;
+	padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.body {
+	background-image: url("multimedia/resumen11.9.jpg");
+	font-family: 'Open Sans', sans-serif;
+}
+
+.a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+//Banner principal
+
+.fondoPrincipal {
+    width: 100%;
+    height: calc(70vh - 1rem);
+    background-image: url("multimedia/vlad.jpg");
+
+
+    .fondo__titulo {
+        @include tituloBanner;
+    }
+
+    .fondo__subtitulo {
+        @include subtituloBanner;
+    }
+
+}
+
+// card principal destacada
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+
+    .tarj {
+        background-image: linear-gradient(rgba(221, 201, 25, 0.76), rgb(255, 166, 0));
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 50px; 
+        transform: rotateX(50%);
+    }
+
+    .tarj__foto {
+        width: 1800px;
+        height: 300px;
+        margin-right: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .tarj__titulo {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 60px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .tarj__textos {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .tarj__descripcion {
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .tarj__enlace {
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boton {
+        border:none;
+        min-width: 180px;
+        height: 50px;
+        padding: 0 30px;
+        background: #000;
+        color: #fff;
+        display:inline-block;
+        border-radius: 100px;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        background: cornflowerblue;
+        transition: .3s ease all;
+    }
+
+    .boton:hover {
+        background: rgb(69, 111, 189);
+        text-decoration: none;
+        color: #fff;
+        
+    }
+
+    .boton--absoluto {
+        position: absolute;
+        right: 20px;
+        bottom: -25px;
+    }
+}
+
+// Texto principal (bajo banner)
+
+.intro {
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+
+    .texto__titulo {
+        font-size: 40px;
+        font-weight: 500px;
+        text-align:center;
+        font-family: 'Roboto', sans-serif;
+        padding: 25px;
+    }
+
+    .texto__texto {
+        display: block;
+        justify-content: flex-start;
+        font-weight: 300;
+        font-size: 25px;
+        text-align: center;
+        list-style-type: disc;
+    }
+
+    .botones {
+        padding: 20px;
+    }
+}
+
+//resumen del parche FOTO
+
+.ress {
+    width: 980px;
+    height: 551px;
+    transform: translateX(45%);
+    background-image: url("multimedia/resumen11.9.jpg");
+    margin: 0px;
+    padding:0px;
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+// tier general FOTO
+
+.tierGeneral {
+    width: 980px;
+    height: 2120px;
+    transform: translateX(45%);
+    background-image: url("multimedia/tierlist.jpg");
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+// texto explicativo sobre el campeón recomendado
+
+.info {
+    @include caja;
+}
+
+.comms {
+    width: 980px;
+    height: 500px;
+    transform: translateX(45%);
+    align-items: center;
+    text-align: center;
+
+    .texto__titulo {
+        font-size: 40px;
+        font-weight: 500px;
+        text-align:center;
+        font-family: 'Roboto', sans-serif;
+        padding: 40px;
+    }
+
+    .texto__texto {
+        display: block;
+        justify-content: flex-start;
+        font-weight: 300;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+//FOOTER
+
+footer {
+    background-color: aqua;
+    height: 30rem;
+}
+
+.colIzq {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.fTitulos{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px;
+}
+.pad20 {
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+
+
+// Colores de los podios
+
+.gold {
+    background-color: gold;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.bronce {
+    background-color:darkgoldenrod
+}
+
+// TOP
+
+.fondoTop {
+    width: 100%;
+    height: calc(70vh - 40px);
+    background-image: url("multimedia/urgot.jpg");
+
+
+    .top__titulo {
+        @include tituloBanner;
+    }
+
+    .top__subtitulo {
+    @include subtituloBanner;
+        }
+
+
+    .comms {
+        width: 62rem;
+        height: 25rem;
+        transform: translateX(45%);
+        align-items: center;
+        text-align: center;
+    
+    }
+}
+
+// jg
+
+.fondoJg {
+    width: 100%;
+    height: calc(70vh - 40px);
+    background-image: url("multimedia/kayn.jpg");
+
+
+    .jg__titulo {
+        @include tituloBanner;
+    }
+
+    .jg__subtitulo {
+        @include subtituloBanner;
+    }
+}
+
+// MID
+
+.fondoMid {
+    width: 100%;
+    height: calc(70vh - 40px);
+    background-image: url("multimedia/syndra.jpg");
+
+
+    .mid__titulo {
+        @include tituloBanner;
+    }
+
+    .mid__subtitulo {
+        @include subtituloBanner;
+    }
+}
+// BOT
+
+.fondoBot {
+    width: 100%;
+    height: calc(70vh - 40px);
+    background-image: url("multimedia/kalista.jpg");
+
+    .bot__titulo {
+        @include tituloBanner;
+    }
+
+    .bot__subtitulo {
+        @include subtituloBanner;
+    }
+}
+// SUPP
+
+    .fondoSupp {
+        width: 100%;
+        height: calc(70vh - 40px);
+        background-image: url("multimedia/thresh.jpg");
+
+
+    .supp__titulo {
+        @include tituloBanner;
+    }
+
+    .supp__subtitulo {
+        @include subtituloBanner;
+    }
+}

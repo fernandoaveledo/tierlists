@@ -1,0 +1,17 @@
+Cambie el título y encabezado del index
+Cambie el título y encabezado de top.html
+Cambie el título y encabezado de mid.html
+Cambie el título y encabezado de jg.html
+Cambie el título y encabezado de bot.html
+Cambie el título y encabezado de supp.html
+Optimización de Imágenes en los 5 archivos 
+Agregué una metaetiqueta de descripción en el index
+Agregué keywords en index
+Agregué keywords en top.html
+Agregué keywords en mid.html
+Agregué keywords en jg.html
+Agregué keywords en bot.html
+Agregué keywords en supp.html
+Creación de contenedor "Comms" para brindar mayor informacion al usuario
+Organicé los temas en orden para que sea mas comprensible (contenedores intro, info y comms)
+

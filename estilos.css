@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.zoom {
+  transition-duration: .5s; }
+
+.zoom:hover {
+  transform: scale(1.15); }
+
+.violeta {
+  background-image: linear-gradient(to right, rgba(165, 69, 69, 0.753), #640101); }
+
+.centrar {
+  text-align: center; }
+
+.centrado {
+  justify-content: space-around; }
+
+.margenBot {
+  margin-bottom: 20px; }
+
+.m0p0 {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.body {
+  background-image: url("multimedia/resumen11.9.jpg");
+  font-family: 'Open Sans', sans-serif; }
+
+.a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.fondoPrincipal {
+  width: 100%;
+  height: calc(70vh - 1rem);
+  background-image: url("multimedia/vlad.jpg"); }
+  .fondoPrincipal .fondo__titulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    transform: translateY(350%); }
+  .fondoPrincipal .fondo__subtitulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%); }
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto; }
+  .contenedor .tarj {
+    background-image: linear-gradient(rgba(221, 201, 25, 0.76), #ffa600);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+    transform: rotateX(50%); }
+  .contenedor .tarj__foto {
+    width: 1800px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block; }
+  .contenedor .tarj__titulo {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 20px; }
+  .contenedor .tarj__textos {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    font-weight: normal; }
+  .contenedor .tarj__descripcion {
+    line-height: 28px;
+    margin-bottom: 20px; }
+  .contenedor .tarj__enlace {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row; }
+  .contenedor .boton {
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: cornflowerblue;
+    transition: .3s ease all; }
+  .contenedor .boton:hover {
+    background: #456fbd;
+    text-decoration: none;
+    color: #fff; }
+  .contenedor .boton--absoluto {
+    position: absolute;
+    right: 20px;
+    bottom: -25px; }
+
+.intro {
+  align-items: center;
+  text-align: center;
+  padding: 40px; }
+  .intro .texto__titulo {
+    font-size: 40px;
+    font-weight: 500px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px; }
+  .intro .texto__texto {
+    display: block;
+    justify-content: flex-start;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    list-style-type: disc; }
+  .intro .botones {
+    padding: 20px; }
+
+.ress {
+  width: 980px;
+  height: 551px;
+  transform: translateX(45%);
+  background-image: url("multimedia/resumen11.9.jpg");
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 20px; }
+
+.tierGeneral {
+  width: 980px;
+  height: 2120px;
+  transform: translateX(45%);
+  background-image: url("multimedia/tierlist.jpg");
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 20px; }
+
+.info {
+  width: 62rem;
+  height: 25rem;
+  transform: translateX(45%);
+  align-items: center;
+  text-align: center; }
+
+.comms {
+  width: 980px;
+  height: 500px;
+  transform: translateX(45%);
+  align-items: center;
+  text-align: center; }
+  .comms .texto__titulo {
+    font-size: 40px;
+    font-weight: 500px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px; }
+  .comms .texto__texto {
+    display: block;
+    justify-content: flex-start;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center; }
+
+footer {
+  background-color: aqua;
+  height: 30rem; }
+
+.colIzq {
+  padding: 10px;
+  font-size: 14px; }
+
+.fTitulos {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px; }
+
+.pad20 {
+  padding: 10px;
+  font-size: 14px; }
+
+.gold {
+  background-color: gold; }
+
+.silver {
+  background-color: silver; }
+
+.bronce {
+  background-color: darkgoldenrod; }
+
+.fondoTop {
+  width: 100%;
+  height: calc(70vh - 40px);
+  background-image: url("multimedia/urgot.jpg"); }
+  .fondoTop .top__titulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    transform: translateY(350%); }
+  .fondoTop .top__subtitulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%); }
+  .fondoTop .comms {
+    width: 62rem;
+    height: 25rem;
+    transform: translateX(45%);
+    align-items: center;
+    text-align: center; }
+
+.fondoJg {
+  width: 100%;
+  height: calc(70vh - 40px);
+  background-image: url("multimedia/kayn.jpg"); }
+  .fondoJg .jg__titulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    transform: translateY(350%); }
+  .fondoJg .jg__subtitulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%); }
+
+.fondoMid {
+  width: 100%;
+  height: calc(70vh - 40px);
+  background-image: url("multimedia/syndra.jpg"); }
+  .fondoMid .mid__titulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    transform: translateY(350%); }
+  .fondoMid .mid__subtitulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%); }
+
+.fondoBot {
+  width: 100%;
+  height: calc(70vh - 40px);
+  background-image: url("multimedia/kalista.jpg"); }
+  .fondoBot .bot__titulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    transform: translateY(350%); }
+  .fondoBot .bot__subtitulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%); }
+
+.fondoSupp {
+  width: 100%;
+  height: calc(70vh - 40px);
+  background-image: url("multimedia/thresh.jpg"); }
+  .fondoSupp .supp__titulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    transform: translateY(350%); }
+  .fondoSupp .supp__subtitulo {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0xp;
+    border: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    transform: translateY(500%); }
