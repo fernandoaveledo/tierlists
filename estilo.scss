@@ -5,7 +5,7 @@
 }
 
 //variables
-$amarillo: yellow;
+$amarillo: rgb(30, 8, 70);
 
 // animaciones 
 
@@ -14,7 +14,7 @@ $amarillo: yellow;
 }
 
 .zoom:hover {
-    transform: scale(1.15);
+    transform: scale(1.07);
 }
 
 // mixins 
@@ -69,7 +69,7 @@ $amarillo: yellow;
 }
 
 .margenBot {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .m0p0 {
@@ -87,8 +87,22 @@ $amarillo: yellow;
 
 
 body {
-	background-color: red;
+	background-color: rgb(28, 2, 31);
 	font-family: 'Open Sans', sans-serif;
+}
+
+div {
+    background-color: rgb(38, 4, 48);
+
+    color: lightgray;
+}
+
+nav {
+    background-color: rgb(51, 6, 65);
+}
+
+.bordeSolido {
+    border: 4px solid rgb(12, 1, 20);
 }
 
 .a {
@@ -99,12 +113,19 @@ a:hover {
 	text-decoration: none;
 }
 
+.grisesito {
+    color: lightgray;
+    background-color: rgb(38, 4, 48);
+}
+
+
 //Banner principal
 
 .fondoPrincipal {
     width: 100%;
     height: calc(70vh - 1rem);
     background-image: url("multimedia/vlad.jpg");
+    padding: 0px;
 
 
     .fondo__titulo {
@@ -123,6 +144,7 @@ a:hover {
 	max-width: 1000px;
 	width: 90%;
 	margin: 0 auto;
+    padding: 60px;
 
     .tarj {
         background-image: linear-gradient(rgba(221, 201, 25, 0.76), rgb(255, 166, 0));
@@ -205,7 +227,8 @@ a:hover {
 .intro {
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
+    margin-top: 40px;
 
     .texto__titulo {
         font-size: 40px;
@@ -234,9 +257,9 @@ a:hover {
 .ress {
     width: 980px;
     height: 551px;
-    transform: translateX(45%);
+    transform: translateX(40%);
     background-image: url("multimedia/resumen11.9.jpg");
-    margin: 0px;
+    margin: 50px;
     padding:0px;
     border: 0px;
     margin-bottom: 20px;
@@ -247,9 +270,9 @@ a:hover {
 .tierGeneral {
     width: 980px;
     height: 2120px;
-    transform: translateX(45%);
+    transform: translateX(40%);
     background-image: url("multimedia/tierlist.jpg");
-    margin: 0px;
+    margin: 50px;
     padding: 0px;
     border: 0px;
     margin-bottom: 20px;
@@ -289,8 +312,7 @@ a:hover {
 //FOOTER
 
 footer {
-    background-color: aqua;
-    height: 30rem;
+    height: 25rem;
 }
 
 .colIzq {
@@ -307,6 +329,8 @@ footer {
     padding: 10px;
     font-size: 14px;
 }
+
+
 
 
 
