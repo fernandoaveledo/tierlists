@@ -21,70 +21,66 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <nav class="navbar grisesito" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepedia.cursecdn.com%2Flolesports_gamepedia_en%2F7%2F75%2FVladimirSquare.png&f=1&nofb=1" width="112" height="28">
-      </a>
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link grisesito">
-          Mejores campeones por línea
-        </a>
-
-        <div class="navbar-dropdown">
-          <a href="top.html" class="navbar-item">
-          TOP
-          </a>
-          <a href="jg.html" class="navbar-item">
-          JUNGLA
-          </a>
-          <a href="mid.html" class="navbar-item">
-          MID
-          </a>
-          <a href="bot.html" class="navbar-item">
-          ADC
-            </a>
-            <a href="supp.html" class="navbar-item">
-              SOPORTE
+  <header class="header">
+    <img class="nav_logo" src='https://i.imgur.com/E3fhL5K.png' alt="logo">
+    <nav>
+      <ul class="nav_links">
+        <a href="index.html"><li>Home</li></a>
+        <a href="guia.html"><li>Guias</li></a>
+        <a href="top.html"><li>Top</li></a>
+        <a href="jg.html"><li>Jungla</li></a>
+        <a href="mid.html"><li>Mid</li></a>
+        <a href="bot.html"><li>ADC</li></a>
+        <a href="supp.html"><li>Soporte</li></a>
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+              <span>Click me</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                Overview
               </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            SINERGIAS
-          </a>
-        </div>
-      <div class="navbar-start">
-        <a href="#" class="navbar-item grisesito">
-         Guías
-        </a>
-        </div>
-      </div>
-  
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
+              <a href="#" class="dropdown-item">
+                Modifiers
+              </a>
+              <a href="#" class="dropdown-item">
+                Grid
+              </a>
+              <a href="#" class="dropdown-item">
+                Form
+              </a>
+              <a href="#" class="dropdown-item">
+                Elements
+              </a>
+              <a href="#" class="dropdown-item">
+                Components
+              </a>
+              <a href="#" class="dropdown-item">
+                Layout
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                More
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <div class="fondoSupp">
-    <h2 class="supp__titulo" > <span>LoL parche 11.9</span></h2>
-    <h3 class="supp__subtitulo"> Tier List para escalar en SoloQ </h3>
+
+      </ul>
+      
+    </nav>
+  </header>
+
+
+  <div class="">
+    <img src="multimedia/thresh.jpg" alt="" width="100&">
+
   </div>
   <div class="intro">
     <div class="texto"> <!--Bloque-->
