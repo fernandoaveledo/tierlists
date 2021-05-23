@@ -158,7 +158,10 @@ a:hover {
     list-style-type: disc; }
   .intro .botones {
     padding: 20px;
-    margin: 20px; }
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
 
 .ress {
   margin: 50px;
@@ -245,6 +248,12 @@ footer {
 .bronce {
   background-color: #8f6f1f; }
 
+.experto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
 .fondoTop {
   width: 100%;
   height: calc(70vh - 40px);
@@ -288,7 +297,6 @@ footer {
 li, p {
   font-family: 'ProximaNova-regular', sans-serif;
   font-weight: 400;
-  font-size: 13px;
   color: #edf0f1;
   text-decoration: none;
   margin: 0; }
@@ -305,9 +313,6 @@ p {
   top: 0;
   width: 100%;
   z-index: 1; }
-
-img {
-  width: 100%; }
 
 .nav_logo {
   cursor: pointer;
