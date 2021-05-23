@@ -57,11 +57,19 @@ $amarillo: rgb(30, 8, 70);
 }
 
 //nav bar
+
+nav {
+    background-color: rgb(51, 6, 65);
+}
+
 .violeta {
     background-image: linear-gradient(to right, rgba(165, 69, 69, 0.753) , rgb(100, 1, 1));
 }
 .centrar {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .centrado {
@@ -85,6 +93,7 @@ $amarillo: rgb(30, 8, 70);
     flex-direction: row;
 }
 
+// body
 
 body {
 	background-color: rgb(28, 2, 31);
@@ -95,10 +104,6 @@ div {
     background-color: rgb(38, 4, 48);
 
     color: lightgray;
-}
-
-nav {
-    background-color: rgb(51, 6, 65);
 }
 
 .bordeSolido {
@@ -124,7 +129,7 @@ a:hover {
 .fondoPrincipal {
     width: 100%;
     height: calc(70vh - 1rem);
-    background-image: url("multimedia/vlad.jpg");
+    background-image: url("multimedia/vladfull.jpg");
     padding: 0px;
 
 
@@ -255,10 +260,6 @@ a:hover {
 //resumen del parche FOTO
 
 .ress {
-    width: 980px;
-    height: 551px;
-    transform: translateX(40%);
-    background-image: url("multimedia/resumen11.9.jpg");
     margin: 50px;
     padding:0px;
     border: 0px;
@@ -322,7 +323,7 @@ footer {
 
 .fTitulos{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     padding: 12px;
 }
 .pad20 {
@@ -330,24 +331,49 @@ footer {
     font-size: 14px;
 }
 
+.margenTop {
+    margin-top: 40px;
+}
+
+.m0 {
+    margin: 0px;
+}
 
 
 
 
 
-// Colores de los podios
+
+
+
+// CARDS
+
+.colorNegroT {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.colorNegro {
+    color: black;
+    font-weight: 300;
+}
 
 .gold {
     background-color: gold;
 }
 
 .silver {
-    background-color: silver;
+    background-color: rgb(218, 218, 218);
 }
 
 .bronce {
-    background-color:darkgoldenrod
+    background-color: rgb(143, 111, 31)
 }
+
+// Video informativo
+
+
 
 // TOP
 
@@ -374,6 +400,11 @@ footer {
         text-align: center;
     
     }
+}
+
+.runasybuild {
+    display: flex;
+    flex-direction: row;
 }
 
 // jg
