@@ -17,6 +17,21 @@ $amarillo: rgb(30, 8, 70);
     transform: scale(1.07);
 }
 
+
+
+// ID's
+
+#coachMain {
+    position:relative;
+}
+
+#flechita {
+    position: relative;
+    transform: rotateX(45%);
+}
+
+
+
 // mixins 
 
 
@@ -358,6 +373,10 @@ footer {
 
 .bronce {
     background-color: rgb(143, 111, 31)
+}
+
+.sinBorder {
+ border-style: none;
 }
 
 // Video informativo

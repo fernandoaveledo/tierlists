@@ -9,6 +9,13 @@
 .zoom:hover {
   transform: scale(1.07); }
 
+#coachMain {
+  position: relative; }
+
+#flechita {
+  position: relative;
+  transform: rotateX(45%); }
+
 nav {
   background-color: #330641;
   color: white; }
@@ -255,6 +262,9 @@ footer {
 
 .bronce {
   background-color: #8f6f1f; }
+
+.sinBorder {
+  border-style: none; }
 
 .experto {
   display: flex;
