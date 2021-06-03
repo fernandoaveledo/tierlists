@@ -9,8 +9,11 @@
 .zoom:hover {
   transform: scale(1.07); }
 
-#coachMain {
-  position: relative; }
+#precios {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  transform: rotateX(50%); }
 
 #flechita {
   position: relative;
@@ -23,6 +26,10 @@ nav {
 .blanco {
   color: white; }
 
+.foto {
+  transform: scale(3);
+  transform: rotateX(10%); }
+
 .violeta {
   background-image: linear-gradient(to right, rgba(165, 69, 69, 0.753), #640101); }
 
@@ -30,10 +37,12 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 0px;
+  margin: 0px; }
 
 .centrado {
-  justify-content: space-around; }
+  text-align: center; }
 
 .margenBot {
   margin-bottom: 50px; }
@@ -60,6 +69,12 @@ div {
 
 .bordeSolido {
   border: 4px solid #0c0114; }
+
+.bordeRojo {
+  border: 2px solid red; }
+
+.bordeVerde {
+  border: 2px solid green; }
 
 a {
   text-decoration: none;
@@ -170,6 +185,9 @@ a:hover {
     display: flex;
     justify-content: center; }
 
+.soloIntro {
+  margin-top: 160px; }
+
 .ress {
   margin: 50px;
   padding: 0px;
@@ -250,6 +268,12 @@ footer {
   font-weight: 600;
   font-size: 20px; }
 
+.colorBlancoT {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center; }
+
 .colorNegro {
   color: black;
   font-weight: 300; }
@@ -271,6 +295,43 @@ footer {
   justify-content: center;
   width: 100%;
   height: 100%; }
+
+.turboMain {
+  background-color: #260430;
+  color: lightgray;
+  border: 4px solid #0c0114;
+  width: 60%;
+  height: 80%;
+  padding: 40px; }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around; }
+  .gridContainer .margencito {
+    margin: 20px;
+    line-height: 1.5;
+    padding: 20px; }
+    .gridContainer .margencito img {
+      float: left;
+      margin-right: 15px; }
+
+.tituloCounters {
+  position: absolute;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+  transform: translateX(55%);
+  font-size: 30px;
+  font-weight: 500px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; }
+
+.rojo {
+  color: red; }
+
+.verde {
+  color: green; }
 
 .fondoTop {
   width: 100%;
@@ -311,44 +372,3 @@ footer {
   width: 100%;
   height: calc(70vh - 40px);
   background-image: url("multimedia/thresh.jpg"); }
-
-li, p {
-  font-family: 'ProximaNova-regular', sans-serif;
-  font-weight: 400;
-  color: #edf0f1;
-  text-decoration: none;
-  margin: 0; }
-
-p {
-  margin: 5px; }
-
-.header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 5%;
-  background-color: #1c021f;
-  top: 0;
-  width: 100%;
-  z-index: 1; }
-
-.nav_logo {
-  cursor: pointer;
-  margin-right: 5px;
-  width: 10%; }
-
-.nav_links {
-  list-style: none;
-  margin: 5px 0 10px; }
-
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px; }
-
-.nav_links li {
-  transition: all 0.3s ease 0s; }
-
-.nav_links li:hover {
-  color: #0088a9;
-  transition: all 0.3s ease 0s;
-  cursor: pointer; }
