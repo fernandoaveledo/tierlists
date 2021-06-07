@@ -42,7 +42,8 @@ nav {
   margin: 0px; }
 
 .centrado {
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
 
 .listasTips {
   text-align: center;
@@ -312,11 +313,9 @@ a:hover {
   flex-direction: column; }
 
 .tituloCounters {
-  position: absolute;
   justify-content: space-around;
   margin: 0px;
   padding: 0px;
-  transform: translateX(55%);
   font-size: 30px;
   font-weight: 500px;
   text-align: center;
@@ -404,7 +403,16 @@ footer {
 .espaciado {
   line-height: 50px; }
 
-@media screen and (max-width: 600px) {
+.segundaColumna {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%; }
+
+#grideano {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto; }
+
+@media screen and (max-width: 800px) {
   .intro {
     width: 93%;
     height: 10%; }
@@ -425,10 +433,27 @@ footer {
     display: flex;
     position: absolute; }
   .gridContainer2 {
+    width: 95%;
     display: grid;
-    grid-template-columns: auto auto; }
+    grid-template-columns: auto; }
   footer {
-    width: 50%; }
-  #grideano {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto; } }
+    font-size: 5px; }
+  .segundaColumna {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; }
+  .col-10 {
+    width: 100%; }
+  #grideano {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto; }
+  nav {
+    width: 100%; } }
+
+@media screen and (max-width: 1400px) {
+  .gridContainer2 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto; } }

@@ -83,6 +83,7 @@ transform: rotateX(10%);
 
 .centrado {
     text-align: center;
+    align-items: center;
 }
 
 .listasTips {
@@ -455,11 +456,9 @@ a:hover {
     flex-direction: column;
 }
 .tituloCounters {
-    position: absolute;
     justify-content: space-around;
     margin: 0px;
     padding: 0px;
-    transform: translateX(55%);
     font-size: 30px;
     font-weight: 500px;
     text-align:center;
@@ -585,10 +584,20 @@ footer {
     line-height: 50px;
 }
 
+.segundaColumna {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+}
+
+#grideano{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 // MEDIA QUERYS
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 {
     .intro {
         width: 93%;
@@ -619,32 +628,41 @@ footer {
     }
 
 .gridContainer2 {
+    width: 95%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
 }
 
+footer {
+width: 100%;
+display: grid;
+font-size: 5px;
+}
 
+.segundaColumna {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+}
 
+.col-10 {
+    width:100%;
+}
 
+#grideano{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+nav {
+    width: 100%;
+}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-    footer {
-        width: 50%;
-        
-    }
-    #grideano{
+@media screen and (max-width: 1400px)
+{
+    .gridContainer2 {
+        width: 60%;
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto;
     }
 }
-
