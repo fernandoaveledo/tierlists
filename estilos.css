@@ -44,6 +44,18 @@ nav {
 .centrado {
   text-align: center; }
 
+.listasTips {
+  text-align: center;
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 20px; }
+
+li {
+  margin-bottom: 5px; }
+
+.margenTop {
+  margin-top: 20px; }
+
 .margenBot {
   margin-bottom: 50px; }
 
@@ -230,39 +242,6 @@ a:hover {
     font-size: 25px;
     text-align: center; }
 
-footer {
-  height: 25rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center; }
-
-.colIzq {
-  padding: 10px;
-  font-size: 14px; }
-
-.fTitulos {
-  font-weight: 600;
-  font-size: 16px;
-  padding: 12px; }
-
-.pad20 {
-  padding: 10px;
-  font-size: 14px; }
-
-.margenTop {
-  margin-top: 40px; }
-
-.m0 {
-  margin: 0px; }
-
-.discord {
-  display: inline;
-  justify-content: center; }
-
-.redes {
-  display: inline;
-  justify-content: start; }
-
 .colorNegroT {
   color: black;
   font-weight: 600;
@@ -315,6 +294,22 @@ footer {
     .gridContainer .margencito img {
       float: left;
       margin-right: 15px; }
+
+.floatLeft {
+  float: left; }
+
+.gridContainer2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around; }
+
+.Dinline {
+  display: flex;
+  flex-direction: row; }
+
+.dColumn {
+  display: flex;
+  flex-direction: column; }
 
 .tituloCounters {
   position: absolute;
@@ -372,3 +367,68 @@ footer {
   width: 100%;
   height: calc(70vh - 40px);
   background-image: url("multimedia/thresh.jpg"); }
+
+footer {
+  height: 25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.colIzq {
+  padding: 10px;
+  font-size: 14px; }
+
+.fTitulos {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px; }
+
+.pad20 {
+  padding: 10px;
+  font-size: 14px; }
+
+.margenTop {
+  margin-top: 40px; }
+
+.m0 {
+  margin: 0px; }
+
+.discord {
+  display: inline;
+  justify-content: center; }
+
+.redes {
+  display: inline;
+  justify-content: start; }
+
+.espaciado {
+  line-height: 50px; }
+
+@media screen and (max-width: 600px) {
+  .intro {
+    width: 93%;
+    height: 10%; }
+  .gridContainer {
+    width: 85%;
+    height: 10%;
+    grid-template-columns: auto;
+    padding: 0px; }
+  .contenedor {
+    width: 95%; }
+  .tarj {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0px;
+    padding: 0px; }
+  .tarj__foto {
+    display: flex;
+    position: absolute; }
+  .gridContainer2 {
+    display: grid;
+    grid-template-columns: auto auto; }
+  footer {
+    width: 50%; }
+  #grideano {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto; } }
